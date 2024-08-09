@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DE - FE - Predictor</title>
+</head>
+<body style="background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);">
+
+<div style="display:flex; flex-direction:column; width:100%; height:100vh; justify-content:center; align-items:center;">
+
+<div style="background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); padding:20px; border-radius:30px; border:5px solid black;">
+
+<h1>ML Model GUI</h1>
+<h2>IR - 7/NB Normal - Predictor</h2>
+<form method="post" action="/predict">
+    <label>DE</label><br>
+    <input type="text" name="DE"><br><br>
+
+    <label>FE</label><br>
+    <input type="text" name="FE"><br><br>
+
+    <input type="submit" value="Predict"><br>
+
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+
+</form>
+
+
+</div>
+</div>
+</body>
+</html>

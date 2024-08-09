@@ -1,0 +1,10 @@
+keygen(gem file) - through which communication will happen towards EC2 all the file upload and all
+putty - remote client in which will be accesing machine through ssh,basically can open cmd of ec2 through putty and install required packages over there
+WinSCP - Software which we had used to upload all the necessarily files for our flask based ml deployment to the server
+
+after uploading all files to ec2 server through winSCP
+it has putty attached so
+you don,t need to authenticate again 
+it automatically recognizes your ubuntu virtual machine
+So this is the command for our ec2 instance
+here will write all the commands and packages we need to install on the server required necessarily for the flask application
